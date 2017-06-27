@@ -1,30 +1,57 @@
 <!DOCTYPE html>
 <head>
-  <title>Renestro</title>
+  <link href="/normalize.css" rel="stylesheet">
   <style>
-    body {
+    header {
       text-align: center;
-      background-image: url("https://github.com/ReneStro/portfolio/blob/gh-pages/purple_dripping_nebula_sunglasses.png?raw=true");
+      background: url('https://github.com/ReneStro/portfolio/blob/gh-pages/purple_dripping_nebula_sunglasses.png?raw=true');
       background-size: cover;
-      background-position: center;
-      font-size: 30px;
-      font-family: 'Josefin Sans', sans-serif;
-      text-align: center;
-      font-color: rgb(255, 255, 255);
-      }
-    
-    img {
-           margin: 40px 0px 0px  0px;
-           border: 7px  solid white;
-           border-radius: 20px;
+      color: white;
     }
-    
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
   </style>
 </head>
 <body>
-  <img src="https://github.com/ReneStro/portfolio/blob/gh-pages/new%20profile.png?raw=true">
-  <p>Hi! I'm Rene, I'm fifteen and I am learning how to make my own website!<br> I love to read and draw.<br>I hate tomatoes and love strawberries. <br> A fun fact about me is that I was adopted when I was six.</p>
-  <input type="email" placeholder="Contact Me">
-  <input type="submit">
+  <header>
+    <img src="https://github.com/ReneStro/portfolio/blob/gh-pages/new%20profile.png?raw=true">
+    <h1>Renestro</h1>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">My Work</a></li>
+      <li><a href="#">Likes and Dislikes</a></li>
+    </ul>
+  </header>
 </body>
-</html>
